@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>atendimento.ao - Solução de Atendimento para PMEs Angolanas</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-   
 </head>
+
 <body>
     <!-- Header -->
     <header>
@@ -25,7 +26,7 @@
                         <li><a href="#contact">Contato</a></li>
                     </ul>
                 </nav>
-                <a href="#signup" class="btn btn-outline">Começar Agora</a>
+                <a href="#signup" class="btn btn-outline" id="header-signup">Começar Agora</a>
             </div>
         </div>
     </header>
@@ -35,10 +36,11 @@
         <div class="container">
             <div class="hero-content">
                 <h1>Atendimento ao Cliente de Excelência para PMEs Angolanas</h1>
-                <p>Centralize o seu atendimento no WhatsApp, Facebook, Instagram, e-mail e site em uma única plataforma. Aumente a satisfação dos seus clientes e economize tempo.</p>
+                <p>Centralize o seu atendimento no WhatsApp, Facebook, Instagram, e-mail e site em uma única plataforma.
+                    Aumente a satisfação dos seus clientes e economize tempo.</p>
                 <div class="hero-buttons">
-                    <a href="#pricing" class="btn btn-primary">Ver Planos</a>
-                    <a href="#demo" class="btn btn-outline">Solicitar Demonstração</a>
+                    <a href="#pricing" class="btn btn-primary" id="hero-pricing">Ver Planos</a>
+                    <a href="#demo" class="btn btn-outline" id="hero-demo">Solicitar Demonstração</a>
                 </div>
             </div>
         </div>
@@ -49,7 +51,8 @@
         <div class="container">
             <div class="section-title">
                 <h2>Por que escolher o atendimento.ao?</h2>
-                <p>Oferecemos todas as ferramentas necessárias para que sua empresa ofereça um atendimento excepcional</p>
+                <p>Oferecemos todas as ferramentas necessárias para que sua empresa ofereça um atendimento excepcional
+                </p>
             </div>
             <div class="features-grid">
                 <div class="feature-card">
@@ -117,7 +120,7 @@
                         <li><i class="fas fa-check"></i> Relatórios básicos</li>
                         <li><i class="fas fa-check"></i> Suporte por e-mail</li>
                     </ul>
-                    <a href="#signup" class="btn btn-primary">Começar Agora</a>
+                    <button class="btn btn-primary signup-btn" data-plan="Básico">Começar Agora</button>
                 </div>
                 <div class="pricing-card popular">
                     <h3>Plano Profissional</h3>
@@ -131,7 +134,7 @@
                         <li><i class="fas fa-check"></i> Integração com e-mail</li>
                         <li><i class="fas fa-check"></i> Suporte prioritário</li>
                     </ul>
-                    <a href="#signup" class="btn btn-primary">Começar Agora</a>
+                    <button class="btn btn-primary signup-btn" data-plan="Profissional">Começar Agora</button>
                 </div>
                 <div class="pricing-card">
                     <h3>Plano Empresarial</h3>
@@ -145,7 +148,7 @@
                         <li><i class="fas fa-check"></i> Integração com CRM</li>
                         <li><i class="fas fa-check"></i> Suporte 24/7</li>
                     </ul>
-                    <a href="#signup" class="btn btn-primary">Começar Agora</a>
+                    <button class="btn btn-primary signup-btn" data-plan="Empresarial">Começar Agora</button>
                 </div>
             </div>
         </div>
@@ -161,7 +164,8 @@
             <div class="testimonials-grid">
                 <div class="testimonial-card">
                     <div class="testimonial-text">
-                        "Desde que implementamos o atendimento.ao, conseguimos centralizar todas as nossas comunicações. O tempo de resposta caiu 60% e a satisfação dos nossos clientes aumentou drasticamente."
+                        "Desde que implementamos o atendimento.ao, conseguimos centralizar todas as nossas comunicações.
+                        O tempo de resposta caiu 60% e a satisfação dos nossos clientes aumentou drasticamente."
                     </div>
                     <div class="testimonial-author">
                         <div class="author-avatar">LC</div>
@@ -173,7 +177,9 @@
                 </div>
                 <div class="testimonial-card">
                     <div class="testimonial-text">
-                        "A integração com WhatsApp foi fundamental para nosso negócio. Agora conseguimos atender rapidamente pelo canal que nossos clientes mais preferem, com histórico e relatórios excelentes."
+                        "A integração com WhatsApp foi fundamental para nosso negócio. Agora conseguimos atender
+                        rapidamente pelo canal que nossos clientes mais preferem, com histórico e relatórios
+                        excelentes."
                     </div>
                     <div class="testimonial-author">
                         <div class="author-avatar">CM</div>
@@ -185,7 +191,8 @@
                 </div>
                 <div class="testimonial-card">
                     <div class="testimonial-text">
-                        "O suporte local fez toda a diferença. A equipe do atendimento.ao nos ajudou na implementação e treinou nossa equipe. Hoje temos processos muito mais eficientes de atendimento."
+                        "O suporte local fez toda a diferença. A equipe do atendimento.ao nos ajudou na implementação e
+                        treinou nossa equipe. Hoje temos processos muito mais eficientes de atendimento."
                     </div>
                     <div class="testimonial-author">
                         <div class="author-avatar">TA</div>
@@ -203,8 +210,9 @@
     <section class="cta" id="signup">
         <div class="container">
             <h2>Pronto para transformar seu atendimento?</h2>
-            <p>Junte-se a centenas de PMEs angolanas que já estão oferecendo um atendimento ao cliente excepcional com nossa plataforma.</p>
-            <a href="#signup" class="btn btn-primary">Experimente Grátis por 14 Dias</a>
+            <p>Junte-se a centenas de PMEs angolanas que já estão oferecendo um atendimento ao cliente excepcional com
+                nossa plataforma.</p>
+            <button class="btn btn-primary" id="cta-signup">Experimente Grátis por 14 Dias</button>
         </div>
     </section>
 
@@ -254,6 +262,80 @@
             </div>
         </div>
     </footer>
-     <script src="script.js"></script>
+
+    <!-- Modal de Cadastro -->
+    <div class="modal" id="signup-modal">
+        <div class="modal-content">
+            <span class="close-modal" id="close-modal">&times;</span>
+
+            <div id="signup-form">
+                <h2 class="modal-title">Comece sua avaliação gratuita</h2>
+                <p style="text-align: center; margin-bottom: 20px; color: var(--gray);">Preencha os dados abaixo para
+                    criar sua conta</p>
+
+                <form id="registration-form">
+                    <div class="form-group">
+                        <label for="name">Nome completo</label>
+                        <input type="text" id="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="company">Nome da empresa</label>
+                        <input type="text" id="company" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail profissional</label>
+                        <input type="email" id="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Telefone</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="employees">Número de funcionários</label>
+                        <select id="employees" required>
+                            <option value="">Selecione...</option>
+                            <option value="1-5">1-5</option>
+                            <option value="6-10">6-10</option>
+                            <option value="11-50">11-50</option>
+                            <option value="51-100">51-100</option>
+                            <option value="100+">100+</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="plan">Plano desejado</label>
+                        <select id="plan" required>
+                            <option value="">Selecione...</option>
+                            <option value="Básico">Básico (15.000 Kz/mês)</option>
+                            <option value="Profissional">Profissional (40.000 Kz/mês)</option>
+                            <option value="Empresarial">Empresarial (85.000 Kz/mês)</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary form-submit">Criar minha conta</button>
+                </form>
+
+                <div class="form-footer">
+                    Ao se inscrever, você concorda com nossos <a href="#">Termos de Serviço</a> e <a href="#">Política
+                        de Privacidade</a>.
+                </div>
+            </div>
+
+            <div class="confirmation" id="confirmation">
+                <i class="fas fa-check-circle"></i>
+                <h3>Conta criada com sucesso!</h3>
+                <p>Enviamos um e-mail de confirmação para <span id="user-email"></span> com instruções para ativar sua
+                    conta.</p>
+                <p>Um de nossos especialistas entrará em contato em até 24 horas para ajudar na implementação.</p>
+                <button class="btn btn-primary" id="back-to-site">Voltar ao site</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
