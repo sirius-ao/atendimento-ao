@@ -267,6 +267,58 @@
         </div>
     </footer>
 
+        <!-- Modal de Demonstração -->
+    <div class="modal" id="demo-modal">
+        <div class="modal-content">
+            <span class="close-modal" id="close-modal">&times;</span>
+            
+            <div id="demo-form">
+                <div class="modal-icon">
+                    <i class="fas fa-calendar-check"></i>
+                </div>
+                <h2 class="modal-title">Agende uma Demonstração</h2>
+                <p style="text-align: center; margin-bottom: 20px; color: var(--gray);">Preencha os dados abaixo e nossa equipe entrará em contato para agendar uma demonstração personalizada</p>
+                
+                <form id="demo-request-form">
+                    <div class="form-group">
+                        <label for="name">Nome completo</label>
+                        <input type="text" id="name" required placeholder="Seu nome completo">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">E-mail profissional</label>
+                        <input type="email" id="email" required placeholder="seu@email.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="whatsapp">Número do WhatsApp</label>
+                        <input type="tel" id="whatsapp" required placeholder="+244 123 456 789">
+                        <div class="whatsapp-note">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>Entraremos em contato por WhatsApp para agendar o melhor horário</span>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary form-submit">
+                        <i class="fas fa-paper-plane"></i> Solicitar Demonstração
+                    </button>
+                </form>
+                
+                <div class="form-footer">
+                    Ao solicitar a demonstração, você concorda com nossa <a href="#">Política de Privacidade</a>.
+                </div>
+            </div>
+            
+            <div class="confirmation" id="confirmation">
+                <i class="fas fa-check-circle"></i>
+                <h3>Solicitação enviada com sucesso!</h3>
+                <p>Entraremos em contato pelo WhatsApp em até 24 horas para agendar sua demonstração personalizada.</p>
+                <p>Verifique sua caixa de entrada do e-mail <span id="user-email"></span> para mais detalhes.</p>
+                <button class="btn btn-primary" id="back-to-site">Entendido</button>
+            </div>
+        </div>
+    </div>
+
     <!-- Modal de Cadastro -->
     <div class="modal" id="signup-modal">
         <div class="modal-content">
