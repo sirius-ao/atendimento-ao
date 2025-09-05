@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumo - atendimento.ao</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2D5BFF;
+            --secondary: #FF6B35;
+            --accent: #00C2A0;
+            --dark: #1A1A2E;
+            --light: #F5F7FF;
+            --gray: #6B7280;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, var(--primary), #1a3dc7);
+            color: white;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background-color: white;
+            color: var(--dark);
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+            width: 100%;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 30px;
+            color: var(--primary);
+            justify-content: center;
+        }
+        
+        .logo span {
+            color: var(--secondary);
+        }
+        
+        h1 {
+            text-align: center;
+            color: var(--primary);
+            margin-bottom: 30px;
+            font-size: 2.2rem;
+        }
+        
+        .problem-section, .solution-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        .problem-section {
+            background-color: #fff4f4;
+            border-left: 4px solid #ff5252;
+        }
+        
+        .solution-section {
+            background-color: #f0f9ff;
+            border-left: 4px solid var(--primary);
+        }
+        
+        h2 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        
+        h2 i {
+            font-size: 1.8rem;
+        }
+        
+        .problem-section h2 {
+            color: #d93636;
+        }
+        
+        .solution-section h2 {
+            color: var(--primary);
+        }
+        
+        ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        li:before {
+            content: "•";
+            color: var(--accent);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            font-size: 1.5rem;
+        }
+        
+        .cta {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: var(--secondary);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            margin: 10px 5px;
+            transition: all 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #e55a2b;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+        
+        .btn-outline:hover {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background-color: var(--primary);
+            color: white;
+            transition: all 0.3s;
+            font-size: 1.2rem;
+        }
+        
+        .social-links a:hover {
+            background-color: var(--secondary);
+            transform: translateY(-3px);
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 25px;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .logo {
+                font-size: 1.8rem;
+            }
+            
+            .btn {
+                padding: 12px 25px;
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <i class="fas fa-headset"></i>
+            <div>atendimento<span>.ao</span></div>
+        </div>
+        
+        <h1>Centralize seu Atendimento ao Cliente</h1>
+        
+        <div class="problem-section">
+            <h2><i class="fas fa-exclamation-circle"></i> Problema que Resolvemos</h2>
+            <p>Muitas empresas pequenas e médias não têm canais centralizados para atender clientes, resultando em:</p>
+            <ul>
+                <li>Comunicação dispersa across WhatsApp, Facebook, Instagram, site, telefone</li>
+                <li>Dificuldade em gerenciar múltiplas conversas simultaneamente</li>
+                <li>Falta de visão unificada do histórico de atendimento</li>
+                <li>Experiência inconsistente para o cliente</li>
+                <li>Ineficiência operacional e perda de oportunidades</li>
+            </ul>
+        </div>
+        
+        <div class="solution-section">
+            <h2><i class="fas fa-check-circle"></i> Nossa Solução</h2>
+            <p>O atendimento.ao oferece centralização completa do atendimento com:</p>
+            <ul>
+                <li><strong>Plataforma Omnichannel</strong> - Todos os canais em um único lugar</li>
+                <li><strong>Métricas e Relatórios</strong> - Acompanhe performance e satisfação</li>
+                <li><strong>Chatbots Inteligentes</strong> - Automação de respostas frequentes</li>
+                <li><strong>Gestão de Equipe</strong> - Distribuição eficiente de atendimentos</li>
+                <li><strong>Integrações Locais</strong> - Conectado com soluções angolanas</li>
+            </ul>
+        </div>
+        
+        <div class="cta">
+            <h3>Pronto para transformar seu atendimento ao cliente?</h3>
+            <p>Junte-se a dezenas de PMEs angolanas que já centralizaram seu atendimento</p>
+            
+            <a href="#" class="btn">Solicitar Demonstração</a>
+            <a href="#" class="btn btn-outline">Ver Planos</a>
+            
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Destaque interativo para os botões
+        const buttons = document.querySelectorAll('.btn');
+        buttons.forEach(button => {
+            button.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-3px)';
+                this.style.boxShadow = '0 7px 15px rgba(0, 0, 0, 0.1)';
+            });
+            
+            button.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+                this.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.05)';
+            });
+        });
+    </script>
+</body>
+</html>
