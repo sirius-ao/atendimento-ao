@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações Completas - atendimento.ao</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2D5BFF;
+            --secondary: #FF6B35;
+            --accent: #00C2A0;
+            --dark: #1A1A2E;
+            --light: #F5F7FF;
+            --gray: #6B7280;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px;
+            background: linear-gradient(135deg, var(--primary), #1a3dc7);
+            color: white;
+            border-radius: 15px;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        .logo span {
+            color: var(--secondary);
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+        }
+        
+        h2 {
+            color: var(--primary);
+            margin: 30px 0 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--primary);
+        }
+        
+        h3 {
+            color: var(--secondary);
+            margin: 20px 0 10px;
+        }
+        
+        section {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .info-card {
+            background-color: var(--light);
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid var(--primary);
+        }
+        
+        .feature-list {
+            list-style: none;
+        }
+        
+        .feature-list li {
+            margin-bottom: 10px;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .feature-list li:before {
+            content: "✓";
+            color: var(--accent);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .pricing-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        .pricing-table th, .pricing-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .pricing-table th {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        .pricing-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        .pricing-table tr:hover {
+            background-color: #f0f7ff;
+        }
+        
+        .highlight {
+            background-color: #fff8e6;
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 4px solid var(--secondary);
+            margin: 20px 0;
+        }
+        
+        .architecture {
+            background-color: #f0f9ff;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .architecture img {
+            max-width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: var(--secondary);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            margin: 10px 5px;
+            transition: all 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #e55a2b;
+            transform: translateY(-2px);
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-headset"></i>
+            <div>atendimento<span>.ao</span></div>
+        </div>
+        <h1>Informações Completas</h1>
+        <p>Documento completo com todas as informações sobre a plataforma</p>
+    </header>
+
+    <section id="overview">
+        <h2>Visão Geral do atendimento.ao</h2>
+        <p>O atendimento.ao é uma plataforma de atendimento ao cliente omnichannel desenvolvida especificamente para pequenas e médias empresas angolanas. A solução centraliza todos os canais de comunicação (WhatsApp, Facebook, Instagram, e-mail, telefone) em uma única interface, facilitando o gerenciamento e melhorando a experiência do cliente.</p>
+        
+        <div class="highlight">
+            <strong>Problema que resolve:</strong> Muitas PMEs não têm canais centralizados para atender clientes, com comunicação dispersa across múltiplas plataformas.
+        </div>
+        
+        <h3>Diferenciais no mercado angolano:</h3>
+        <ul class="feature-list">
+            <li>Domínio nacional (.ao) e presença local</li>
+            <li>Suporte em português com conhecimento do mercado angolano</li>
+            <li>Preços em Kwanza (Kz) acessíveis para PMEs</li>
+            <li>Integração com ferramentas e sistemas locais</li>
+            <li>Gateway de pagamento local (EMIS, Multicaixa Express)</li>
+        </ul>
+    </section>
+
+    <section id="business-model">
+        <h2>Modelo de Negócio</h2>
+        
+        <h3>Proposta de Valor:</h3>
+        <ul class="feature-list">
+            <li>Centralização do atendimento em múltiplos canais</li>
+            <li>Solução acessível em português com preços em Kz</li>
+            <li>Relatórios de desempenho e métricas de atendimento</li>
+            <li>Suporte local + treinamento básico para equipes</li>
+            <li>Integração com Conectados.ao (faturação e CRM)</li>
+        </ul>
+        
+        <h3>Segmentos de Clientes:</h3>
+        <div class="info-grid">
+            <div class="info-card">
+                <h4>Pequenas empresas</h4>
+                <p>Restaurantes, lojas, clínicas, prestadores de serviço</p>
+            </div>
+            <div class="info-card">
+                <h4>Médias empresas</h4>
+                <p>Empresas que precisam de atendimento profissionalizado</p>
+            </div>
+            <div class="info-card">
+                <h4>Startups e negócios digitais</h4>
+                <p>E-commerce, SaaS locais</p>
+            </div>
+            <div class="info-card">
+                <h4>Escolas e centros de formação</h4>
+                <p>Que usam canais digitais para comunicação</p>
+            </div>
+        </div>
+        
+        <h3>Canais de Distribuição:</h3>
+        <ul class="feature-list">
+            <li>Website oficial (atendimento.ao)</li>
+            <li>Demonstrações gratuitas / trial de 7-14 dias</li>
+            <li>Parceiros revendedores (empresas de TI, agências de marketing)</li>
+            <li>Redes sociais (Facebook, Instagram, LinkedIn)</li>
+        </ul>
+    </section>
+
+    <section id="pricing">
+        <h2>Planos e Preços</h2>
+        
+        <table class="pricing-table">
+            <thead>
+                <tr>
+                    <th>Característica</th>
+                    <th>Plano Básico</th>
+                    <th>Plano Profissional</th>
+                    <th>Plano Empresarial</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Preço (mensal)</td>
+                    <td>15.000 - 20.000 Kz</td>
+                    <td>35.000 - 45.000 Kz</td>
+                    <td>70.000 - 100.000 Kz</td>
+                </tr>
+                <tr>
+                    <td>Atendentes</td>
+                    <td>1-2</td>
+                    <td>Até 5</td>
+                    <td>Ilimitados</td>
+                </tr>
+                <tr>
+                    <td>Canais</td>
+                    <td>1 canal (WhatsApp OU Facebook OU site)</td>
+                    <td>3 canais</td>
+                    <td>Canais ilimitados</td>
+                </tr>
+                <tr>
+                    <td>Histórico</td>
+                    <td>30 dias</td>
+                    <td>Ilimitado</td>
+                    <td>Ilimitado</td>
+                </tr>
+                <tr>
+                    <td>Recursos</td>
+                    <td>Relatórios básicos</td>
+                    <td>Respostas automáticas, tags, integração e-mail</td>
+                    <td>Chatbots, relatórios avançados, integração CRM</td>
+                </tr>
+                <tr>
+                    <td>Suporte</td>
+                    <td>Por e-mail</td>
+                    <td>Prioritário</td>
+                    <td>24/7 com SLA</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="technical">
+        <h2>Informações Técnicas</h2>
+        
+        <h3>Arquitetura da Plataforma:</h3>
+        <div class="architecture">
+            <p><strong>Núcleo:</strong> Chatwoot (plataforma de atendimento omnichannel open-source)</p>
+            <p><strong>Hospedagem:</strong> Self-hosted em cluster Docker Swarm com Traefik</p>
+            <p><strong>Modelo:</strong> Multi-tenant (cada cliente isolado no mesmo servidor)</p>
+        </div>
+        
+        <h3>Ferramentas de Automação e Integração:</h3>
+        <ul class="feature-list">
+            <li><strong>n8n:</strong> Automação de workflows e integrações</li>
+            <li><strong>Botpress:</strong> Criação de chatbots para FAQ</li>
+            <li><strong>Metabase:</strong> Business Intelligence e relatórios</li>
+            <li><strong>Kill Bill:</strong> Sistema de billing open-source</li>
+            <li><strong>Keycloak:</strong> Gestão de autenticação e usuários</li>
+        </ul>
+        
+        <h3>Integrações de Canais:</h3>
+        <ul class="feature-list">
+            <li>WhatsApp Business API</li>
+            <li>Facebook Messenger</li>
+            <li>Instagram Direct</li>
+            <li>E-mail (SMTP/IMAP)</li>
+            <li>Telegram</li>
+            <li>Widget para site</li>
+        </ul>
+        
+        <h3>Integrações Locais (Angola):</h3>
+        <ul class="feature-list">
+            <li>Gateway de pagamento (EMIS, Multicaixa Express)</li>
+            <li>Sistema de faturação (Conectados.ao)</li>
+            <li>APIs de operadoras de telecomunicações</li>
+        </ul>
+    </section>
+
+    <section id="features">
+        <h2>Funcionalidades Principais</h2>
+        
+        <h3>Atendimento Omnichannel:</h3>
+        <ul class="feature-list">
+            <li>Centralização de todos os canais em uma única plataforma</li>
+            <li>Visão unificada das conversas com cada cliente</li>
+            <li>Distribuição automática de conversas para atendentes</li>
+        </ul>
+        
+        <h3>Automação:</h3>
+        <ul class="feature-list">
+            <li>Chatbots para perguntas frequentes (FAQ)</li>
+            <li>Respostas automáticas e mensagens de saudação</li>
+            <li>Encaminhamento automático por palavras-chave</li>
+            <li>Workflows automatizados (ex: criar ticket no CRM)</li>
+        </ul>
+        
+        <h3>Relatórios e Analytics:</h3>
+        <ul class="feature-list">
+            <li>Métricas de desempenho (tempo de resposta, satisfação)</li>
+            <li>Relatórios personalizados por período</li>
+            <li>Dashboard com indicadores-chave (KPI)</li>
+            <li>Exportação de dados para análise</li>
+        </ul>
+        
+        <h3>Gestão de Clientes:</h3>
+        <ul class="feature-list">
+            <li>Base de dados de clientes unificada</li>
+            <li>Histórico completo de interações</li>
+            <li>Tags e segmentação de clientes</li>
+            <li>Integração com CRM</li>
+        </ul>
+    </section>
+
+    <section id="roadmap">
+        <h2>Roadmap e Próximos Passos</h2>
+        
+        <h3>Fase 1 (Atual) - MVP:</h3>
+        <ul class="feature-list">
+            <li>Integração com WhatsApp Business API</li>
+            <li>Dashboard básico de relatórios</li>
+            <li>Sistema de billing com gateway local</li>
+            <li>Onboarding de primeiros clientes</li>
+        </ul>
+        
+        <h3>Fase 2 (Próximos 3-6 meses):</h3>
+        <ul class="feature-list">
+            <li>Integração com Instagram e Facebook</li>
+            <li>Chatbots básicos para FAQ</li>
+            <li>App móvel para atendentes</li>
+            <li>Programa de parceiros revendedores</li>
+        </ul>
+        
+        <h3>Fase 3 (Próximos 6-12 meses):</h3>
+        <ul class="feature-list">
+            <li>Integração com Conectados.ao (CRM e faturação)</li>
+            <li>Automações avançadas com n8n</li>
+            <li>API pública para desenvolvedores</li>
+            <li>Expansão para outros países lusófonos</li>
+        </ul>
+    </section>
+
+    <section id="additional-info">
+        <h2>Informações Adicionais</h2>
+        
+        <h3>Estrutura de Custos:</h3>
+        <ul class="feature-list">
+            <li>Servidores e infraestrutura cloud</li>
+            <li>Desenvolvimento e manutenção técnica</li>
+            <li>Suporte e atendimento ao cliente</li>
+            <li>Marketing e vendas</li>
+            <li>Custos administrativos (licenças, contabilidade)</li>
+        </ul>
+        
+        <h3>Parcerias Estratégicas:</h3>
+        <ul class="feature-list">
+            <li>Operadoras de telecomunicações (Unitel, Movicel)</li>
+            <li>Agências de marketing digital</li>
+            <li>Gateways de pagamento (EMIS, bancos)</li>
+            <li>Fornecedores de infraestrutura cloud</li>
+            <li>Grupo Sirius (sinergia com Conectados.ao)</li>
+        </ul>
+        
+        <h3>Modelo de Aquisição de Clientes:</h3>
+        <ul class="feature-list">
+            <li>Teste gratuito de 14 dias</li>
+            <li>Funil de vendas com demonstrações personalizadas</li>
+            <li>Marketing de conteúdo para PMEs angolanas</li>
+            <li>Programa de indicação com benefícios</li>
+            <li>Parcerias com revendedores</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2023 atendimento.ao - Todas as informações contidas neste documento são confidenciais e de propriedade do atendimento.ao</p>
+        <p>Para mais informações, contacte: info@atendimento.ao | +244 923 456 789</p>
+    </footer>
+
+    <script>
+        // Função para copiar o conteúdo da página
+        function copyPageContent() {
+            const content = document.documentElement.outerHTML;
+            const tempTextArea = document.createElement('textarea');
+            tempTextArea.value = content;
+            document.body.appendChild(tempTextArea);
+            tempTextArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempTextArea);
+            
+            alert('Conteúdo copiado para a área de transferência! Agora você pode colar em um documento para enviar para outra IA.');
+        }
+        
+        // Adicionar botão de copiar
+        const copyButton = document.createElement('button');
+        copyButton.textContent = 'Copiar Todas as Informações';
+        copyButton.className = 'btn';
+        copyButton.style.position = 'fixed';
+        copyButton.style.bottom = '20px';
+        copyButton.style.right = '20px';
+        copyButton.style.zIndex = '1000';
+        copyButton.onclick = copyPageContent;
+        
+        document.body.appendChild(copyButton);
+    </script>
+</body>
+</html>
